@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ImageUpload">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload the Question as image        (jpg / png)"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnchoose"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/custom_edit_button"
+        android:text="Choose Image" />
+
+    <EditText
+        android:id="@+id/editimagename"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/btnchoose"
+        android:hint="Enter Question Number" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progress_bar"
+        android:layout_below="@+id/editimagename"
+        android:layout_alignStart="@+id/btnchoose"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="4dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="116dp" />
+
+    <Button
+        android:id="@+id/btnuploadimg"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/custom_edit_button"
+        android:text="Upload Image" />
+
+    <TextView
+        android:id="@+id/textshow"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="52dp"
+        android:layout_toEndOf="@+id/btnuploadimg"
+        android:gravity="center"
+        android:text="Show Uploaded Image"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textanswer"
+        android:layout_width="171dp"
+        android:layout_height="103dp"
+        android:layout_below="@+id/btnuploadimg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="Upload Answers"
+        android:textSize="16dp"
+        android:onClick="uploadanswer"/>
+
+
+</RelativeLayout>
