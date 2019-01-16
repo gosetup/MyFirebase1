@@ -84,13 +84,26 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.home) {
             Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_subject) {
+            Intent intent1 = new Intent(this,HomeActivity.class);
+            startActivity(intent1);
+
+        }
+        else if (id == R.id.nav_purchases) {
+            //Intent intent4 = new Intent(this,FeedBack.class);
+            //startActivity(intent4);
 
         } else if (id == R.id.feedback) {
+            Intent intent3 = new Intent(this, FeedBack.class);
+            startActivity(intent3);
+        }
+            else if (id == R.id.about) {
+                //Intent intent4 = new Intent(this,FeedBack.class);
+                //startActivity(intent4);
 
-        } else if (id == R.id.exit) {
-            Intent intent1 = new Intent(this,LogIn.class);
-            startActivity(intent1);
+        } else if (id == R.id.logout) {
+            Intent intent5 = new Intent(this,LogIn.class);
+            startActivity(intent5);
 
         }
 

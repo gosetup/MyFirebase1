@@ -55,7 +55,6 @@
         android:onClick="login"
         android:text="LogIn"
         android:textSize="20dp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"

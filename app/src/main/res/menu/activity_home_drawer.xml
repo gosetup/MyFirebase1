@@ -10,22 +10,32 @@
             android:title="Home" />
 
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_subject"
+            android:icon="@drawable/ic_subject_black_24dp"
+            android:title="Subjects" />
+
+        <item
+            android:id="@+id/nav_purchases"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Purchases" />
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_feedback_black_24dp"
+            android:title="Feed Back" />
     </group>
 
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/feedback"
-                android:icon="@drawable/ic_feedback_black_24dp"
-                android:title="Feed Back" />
+                android:id="@+id/about"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="About / Help" />
             <item
-                android:id="@+id/exit"
+                android:id="@+id/logout"
                 android:icon="@drawable/ic_exit_to_app_black_24dp"
-                android:title="Exit" />
+                android:title="Log Out" />
         </menu>
     </item>
 
